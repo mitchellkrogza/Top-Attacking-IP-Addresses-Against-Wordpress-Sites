@@ -53,7 +53,7 @@ printf '%s\n%s%s\n' "$_startmarker" "Date Last Updated: " "$_now" >> "$_outputde
 
 cat $_input |  while read LINE
 do
-    ping -c1 -t1 "$LINE" > /dev/null
+    ping -c 1 -t 1 "$LINE" > /dev/null
     if [ $? -eq 0 ]; then
     printf '%s\n' "$LINE" >> $_outputactive
     else
