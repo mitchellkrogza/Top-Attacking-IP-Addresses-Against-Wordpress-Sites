@@ -91,7 +91,7 @@ sudo bash -x $TRAVIS_BUILD_DIR/.dev-tools/run-ping-tests.sh
 # Write Version Information into Readme File
 # ******************************************
 
-#sudo $TRAVIS_BUILD_DIR/.dev-tools/modify-readme-file.sh
+sudo $TRAVIS_BUILD_DIR/.dev-tools/modify-readme-file.sh
 
 # *************************************
 # Add all the modified files and commit
