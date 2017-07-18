@@ -86,7 +86,7 @@ do
 printf '%s\n' "${LINE}" >> "$_tmpnginxA"
 done < $_input1
 
-while IFS= read -r LINE
+while IFS2= read -r LINE
 do
 printf '%s\n' "${LINE}" >> "$_tmpnginxA"
 done < $_input2
