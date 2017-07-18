@@ -74,24 +74,24 @@ git checkout master
 # *****************************************************
 # Group all text files into one file and sort for dupes
 # *****************************************************
-#cat $TRAVIS_BUILD_DIR/2016/*.txt >> $TRAVIS_BUILD_DIR/wordpress-attacking-ips.txt
-#cat $TRAVIS_BUILD_DIR/2017/*.txt >> $TRAVIS_BUILD_DIR/wordpress-attacking-ips.txt
+cat $TRAVIS_BUILD_DIR/2016/*.txt >> $TRAVIS_BUILD_DIR/wordpress-attacking-ips.txt
+cat $TRAVIS_BUILD_DIR/2017/*.txt >> $TRAVIS_BUILD_DIR/wordpress-attacking-ips.txt
 
-_input1=$TRAVIS_BUILD_DIR/2016/*.txt
-_input2=$TRAVIS_BUILD_DIR/2017/*.txt
+#_input1=$TRAVIS_BUILD_DIR/2016/*.txt
+#_input2=$TRAVIS_BUILD_DIR/2017/*.txt
 _output=$TRAVIS_BUILD_DIR/wordpress-attacking-ips.txt
 
-while IFS= read -r LINE
-do
-printf '%s\n' "${LINE}" >> "$_tmpnginxA"
-done < $_input1
+#while IFS= read -r LINE
+#do
+#printf '%s\n' "${LINE}" >> "$_tmpnginxA"
+#done < $_input1
 
-while IFS2= read -r LINE
-do
-printf '%s\n' "${LINE}" >> "$_tmpnginxA"
-done < $_input2
+#while IFS2= read -r LINE
+#do
+#printf '%s\n' "${LINE}" >> "$_tmpnginxA"
+#done < $_input2
 
-mv $_tmpnginxA $_output
+#mv $_tmpnginxA $_output
 
 #_inputlist=$TRAVIS_BUILD_DIR/wordpress-attacking-ips.txt
 
