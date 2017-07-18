@@ -90,7 +90,7 @@ sort -u $_output -o $_output
 
 #sudo sh -x $TRAVIS_BUILD_DIR/.dev-tools/install-run-funceble.sh
 
-sudo sh $TRAVIS_BUILD_DIR/.dev-tools/run-ping-tests.sh
+sudo bash $TRAVIS_BUILD_DIR/.dev-tools/run-ping-tests.sh
 
 # ******************************************
 # Write Version Information into Readme File

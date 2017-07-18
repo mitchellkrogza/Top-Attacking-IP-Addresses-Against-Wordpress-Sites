@@ -31,17 +31,12 @@
 # Set Some Variables
 # ******************
 
-YEAR=$(date +"%Y")
-MONTH=$(date +"%m")
-MY_GIT_TAG=V3.$YEAR.$MONTH.$TRAVIS_BUILD_NUMBER
-BAD_REFERRERS=$(wc -l < $TRAVIS_BUILD_DIR/_generator_lists/bad-referrers.list)
-BAD_BOTS=$(wc -l < $TRAVIS_BUILD_DIR/_generator_lists/bad-user-agents.list)
 _now="$(date)"
 _startmarker="## Ping Tests Against Top Attacking Wordpress IP's ##"
 _endmarker="## End Ping Tests Against Top Attacking Wordpress IP's ##"
-_tmpips=_tmpips
 _input=$TRAVIS_BUILD_DIR/wordpress-attacking-ips.txt
-_output=$TRAVIS_BUILD_DIR/wordpress-attacking-ips-status.txt
+_outputactive=$TRAVIS_BUILD_DIR/active-wordpress-attacking-ips.txt
+_outputdead=$TRAVIS_BUILD_DIR/inactive-wordpress-attacking-ips.txt
 
 # ************************************
 # Run Ping Tests
@@ -49,11 +44,14 @@ _output=$TRAVIS_BUILD_DIR/wordpress-attacking-ips-status.txt
 
 cat $_input |  while read LINE
 do
-    ping -c 1 "$LINE" 2>> $_output
+    #ping -c 1 "$LINE" 2>> $_output
+    ping -c 1 "$LINE" > /dev/null
     if [ $? -eq 0 ]; then
-    echo "node $LINE is up" 
+    #echo "node $LINE is up" >> $_outputactive
+    printf '%s\n' "$LINE" >> $_outputactive
     else
-    echo "node $LINE is down"
+    #echo "node $LINE is down" >> $_outputdead
+    printf '%s\n' "$LINE" >> $_outputdead
     fi
 done
 
