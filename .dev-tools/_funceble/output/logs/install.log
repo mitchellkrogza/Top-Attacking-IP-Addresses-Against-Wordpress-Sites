@@ -1,0 +1,11 @@
+Tue Jul 18 11:39:47 UTC 2017
+Script exist  ✔
+Script readable  ✔
+Script executable  ✔
+awk installed  ✔
+curl installed  ✔
+expect installed  ✔
+sed installed  ✔
+sha512sum installed  ✔
+whois installed  ✔
+Installation of working directory  ✔
