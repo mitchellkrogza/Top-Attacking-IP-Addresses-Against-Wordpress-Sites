@@ -34,7 +34,7 @@
 YEAR=$(date +%Y)
 MONTH=$(date +%m)
 MY_GIT_TAG=V1.$YEAR.$MONTH.$TRAVIS_BUILD_NUMBER
-TOTAL_SITES=$(wc -l < $TRAVIS_BUILD_DIR/travisCI/_strip_domains/domains.txt)
+TOTAL_SITES=$(wc -l < $TRAVIS_BUILD_DIR/active-wordpress-attacking-ips.txt)
 
 # **********************************
 # Temporary database files we create
@@ -54,19 +54,19 @@ _endmarker="### Version Information ##"
 # PRINT VERSION INFORMATION INTO README.md
 # ****************************************
 
-printf '%s\n%s\n%s%s\n%s%s\n%s\n%s' "$_startmarker" "********************************************" "#### Version: " "$MY_GIT_TAG" "#### Total Bad / Suspicious / Hacked Domains: " "$TOTAL_SITES" "********************************************" "$_endmarker" >> "$_tmpnginxA"
+printf '%s\n%s\n%s%s\n%s%s\n%s\n%s' "$_startmarker" "********************************************" "#### Version: " "$MY_GIT_TAG" "#### Total Active Attacking IP's: " "$TOTAL_SITES" "********************************************" "$_endmarker" >> "$_tmpnginxA"
 mv $_tmpnginxA $_inputdbA
 ed -s $_inputdbA<<\IN
 1,/### Version Information #/d
 /### Version Information ##/,$d
 ,d
-.r /home/travis/build/mitchellkrogza/The-Big-List-of-Hacked-Malware-Web-Sites/README.md
+.r /home/travis/build/mitchellkrogza/Top-Attacking-IP-Addresses-Against-Wordpress-Sites/README.md
 /### Version Information #/x
 .t.
 .,/### Version Information ##/-d
 #,p
 #,p used to print output replaced with w below to write
-w /home/travis/build/mitchellkrogza/The-Big-List-of-Hacked-Malware-Web-Sites/README.md
+w /home/travis/build/mitchellkrogza/Top-Attacking-IP-Addresses-Against-Wordpress-Sites/README.md
 q
 IN
 rm $_inputdbA

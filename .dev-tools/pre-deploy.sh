@@ -76,13 +76,10 @@ git checkout master
 # Input files must end with a blank newline
 # *****************************************************
 
+_output=$TRAVIS_BUILD_DIR/wordpress-attacking-ips.txt
 cat $TRAVIS_BUILD_DIR/2016/*.txt >> $TRAVIS_BUILD_DIR/wordpress-attacking-ips.txt
 cat $TRAVIS_BUILD_DIR/2017/*.txt >> $TRAVIS_BUILD_DIR/wordpress-attacking-ips.txt
-
-_output=$TRAVIS_BUILD_DIR/wordpress-attacking-ips.txt
-
 sort -u $_output -o $_output
-
 
 # ***************************************************
 # Run ping tests to check for IP's still active
