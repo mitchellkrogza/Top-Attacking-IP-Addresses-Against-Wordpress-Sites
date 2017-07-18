@@ -1,5 +1,5 @@
 ## Ping Tests Against Top Attacking Wordpress IP's ##
-Date Last Updated: Tue Jul 18 13:28:34 UTC 2017
+Date Last Updated: Tue Jul 18 13:33:20 UTC 2017
 107.150.37.26
 142.54.160.154
 142.54.164.58
