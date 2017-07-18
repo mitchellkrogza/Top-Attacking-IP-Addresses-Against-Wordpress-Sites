@@ -32,7 +32,8 @@
 # ******************
 
 _now="$(date)"
-_startmarker="## Ping Tests Against Top Attacking Wordpress IP's ##"
+_start1="## ACTIVE Attacking Wordpress IP's ##"
+_start2="## INACTIVE/DEAD Attacking Wordpress IP's ##"
 _input=$TRAVIS_BUILD_DIR/wordpress-attacking-ips.txt
 _outputactive=$TRAVIS_BUILD_DIR/active-wordpress-attacking-ips.txt
 _outputdead=$TRAVIS_BUILD_DIR/inactive-wordpress-attacking-ips.txt
@@ -48,12 +49,12 @@ sudo truncate -s 0 $_outputdead
 # Run Ping Tests
 # ************************************
 
-printf '%s\n%s%s\n' "$_startmarker" "Date Last Updated: " "$_now" >> "$_outputactive"
-printf '%s\n%s%s\n' "$_startmarker" "Date Last Updated: " "$_now" >> "$_outputdead"
+printf '%s\n%s%s\n' "$_start1" "Date Last Updated: " "$_now" >> "$_outputactive"
+printf '%s\n%s%s\n' "$_start2" "Date Last Updated: " "$_now" >> "$_outputdead"
 
 cat $_input |  while read LINE
 do
-    ping -c 1 -t 1 "$LINE" > /dev/null
+    ping -c 1 "$LINE" > /dev/null
     if [ $? -eq 0 ]; then
     printf '%s\n' "$LINE" >> $_outputactive
     else
