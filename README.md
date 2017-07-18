@@ -6,6 +6,10 @@ Lists of the top attacking IP addresses trying to hack or compromise Wordpress w
 Information is sourced from reports released monthly by Wordfence https://www.wordfence.com/
 
 ### Version Information #
+********************************************
+#### Version: V1.2017.07.11
+#### Total Active Attacking IP's: 54
+********************************************
 ### Version Information ##
 
 # Single List Output

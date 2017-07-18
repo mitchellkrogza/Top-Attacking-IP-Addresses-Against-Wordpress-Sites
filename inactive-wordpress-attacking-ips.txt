@@ -1,5 +1,5 @@
 ## INACTIVE/DEAD Attacking Wordpress IP's ##
-Date Last Updated: Tue Jul 18 14:10:51 UTC 2017
+Date Last Updated: Tue Jul 18 14:24:12 UTC 2017
 
 142.54.160.154
 142.54.164.58
@@ -43,6 +43,7 @@ Date Last Updated: Tue Jul 18 14:10:51 UTC 2017
 91.200.12.33
 91.200.12.42
 91.200.12.43
+91.200.12.49
 91.200.12.58
 91.200.12.81
 91.200.12.92
