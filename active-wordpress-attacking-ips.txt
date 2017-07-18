@@ -1,6 +1,3 @@
-## ACTIVE Attacking Wordpress IP's ##
-Date Last Updated: Tue Jul 18 15:01:24 UTC 2017
-
 107.150.37.26
 146.0.74.150
 148.253.188.34
