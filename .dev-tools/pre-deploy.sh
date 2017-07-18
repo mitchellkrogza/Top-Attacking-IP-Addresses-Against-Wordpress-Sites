@@ -34,6 +34,7 @@
 YEAR=$(date +"%Y")
 MONTH=$(date +"%m")
 cd $TRAVIS_BUILD_DIR
+_tmpnginxA=_tmpnginxA
 
 # *******************************
 # Remove Remote Added by TravisCI
@@ -70,13 +71,31 @@ git checkout master
 # Sort our file for duplicates
 # ***************************************************
 
-# Group all text files into one file
-cat $TRAVIS_BUILD_DIR/2016/*.txt >> $TRAVIS_BUILD_DIR/wordpress-attacking-ips.txt
-cat $TRAVIS_BUILD_DIR/2017/*.txt >> $TRAVIS_BUILD_DIR/wordpress-attacking-ips.txt
+# *****************************************************
+# Group all text files into one file and sort for dupes
+# *****************************************************
+#cat $TRAVIS_BUILD_DIR/2016/*.txt >> $TRAVIS_BUILD_DIR/wordpress-attacking-ips.txt
+#cat $TRAVIS_BUILD_DIR/2017/*.txt >> $TRAVIS_BUILD_DIR/wordpress-attacking-ips.txt
 
-_inputlist=$TRAVIS_BUILD_DIR/wordpress-attacking-ips.txt
+_input1=$TRAVIS_BUILD_DIR/2016/*.txt
+_input2=$TRAVIS_BUILD_DIR/2017/*.txt
+_output=$TRAVIS_BUILD_DIR/wordpress-attacking-ips.txt
 
-sort -u $_inputlist -o $_inputlist
+while IFS= read -r LINE
+do
+printf '%s\n' "${LINE}" >> "$_tmpnginxA"
+done < $_input1
+
+while IFS= read -r LINE
+do
+printf '%s\n' "${LINE}" >> "$_tmpnginxA"
+done < $_input2
+
+mv $_tmpnginxA $_output
+
+#_inputlist=$TRAVIS_BUILD_DIR/wordpress-attacking-ips.txt
+
+sort -u $_output -o $_output
 
 
 # ***************************************************
