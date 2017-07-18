@@ -16,7 +16,7 @@ cache:
   - apt
 
 script:
-  - bash -x .dev-tools/pre-deploy.sh
+  - bash .dev-tools/pre-deploy.sh
 
 before_deploy:
   - bash .dev-tools/deploy-package.sh

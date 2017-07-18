@@ -1,5 +1,5 @@
 #!/bin/bash
-# TravisCI Package Pre-Deploy Script for the Top Attacking IP Addresses Against Wordpress Sites
+# Run Ping Tests for the Top Attacking IP Addresses Against Wordpress Sites
 # Created by: Mitchell Krog (mitchellkrog@gmail.com)
 # Copyright: Mitchell Krog - https://github.com/mitchellkrogza
 # Repo Url: https://github.com/mitchellkrogza/Top-Attacking-IP-Addresses-Against-Wordpress-Sites
@@ -33,81 +33,63 @@
 
 YEAR=$(date +"%Y")
 MONTH=$(date +"%m")
-cd $TRAVIS_BUILD_DIR
-_tmpnginxA=_tmpnginxA
+MY_GIT_TAG=V3.$YEAR.$MONTH.$TRAVIS_BUILD_NUMBER
+BAD_REFERRERS=$(wc -l < $TRAVIS_BUILD_DIR/_generator_lists/bad-referrers.list)
+BAD_BOTS=$(wc -l < $TRAVIS_BUILD_DIR/_generator_lists/bad-user-agents.list)
+_now="$(date)"
+_startmarker="## Ping Tests Against Top Attacking Wordpress IP's ##"
+_endmarker="## End Ping Tests Against Top Attacking Wordpress IP's ##"
+_tmpips=_tmpips
+_input=$TRAVIS_BUILD_DIR/wordpress-attacking-ips.txt
+_output=$TRAVIS_BUILD_DIR/wordpress-attacking-ips-status.txt
 
-# *******************************
-# Remove Remote Added by TravisCI
-# *******************************
+# ************************************
+# Run Ping Tests
+# ************************************
 
-git remote rm origin
+cat $_input |  while read LINE
+do
+    ping -c 1 "$LINE" 2>> $_output
+    if [ $? -eq 0 ]; then
+    echo "node $LINE is up" 
+    else
+    echo "node $LINE is down"
+    fi
+done
 
-# **************************
-# Add Remote with Secure Key
-# **************************
-
-git remote add origin https://${GH_TOKEN}@github.com/${TRAVIS_REPO_SLUG}.git
-
-# **********************************************************************************
-# List Remotes ONLY DURING testing - do not do this on live repo / possible key leak
-# git remote -v
-# ***********************************************************************************
-
-# *********************
-# Set Our Git Variables
-# *********************
-
-git config --global user.email "${GIT_EMAIL}"
-git config --global user.name "${GIT_NAME}"
-git config --global push.default simple
-
-# *******************************************
-# Make sure we have checked out master branch
-# *******************************************
-
-git checkout master
-
-# ***************************************************
-# Sort our file for duplicates
-# ***************************************************
-
-# *****************************************************
-# Group all text files into one file and sort for dupes
-# Input files must end with a blank newline
-# *****************************************************
-
-cat $TRAVIS_BUILD_DIR/2016/*.txt >> $TRAVIS_BUILD_DIR/wordpress-attacking-ips.txt
-cat $TRAVIS_BUILD_DIR/2017/*.txt >> $TRAVIS_BUILD_DIR/wordpress-attacking-ips.txt
-
-_output=$TRAVIS_BUILD_DIR/wordpress-attacking-ips.txt
-
-sort -u $_output -o $_output
+#printf '%s\n%s%s\n' "$_start1" "Date Run: " "$_now" >> "$_tmpips"
+#while IFS= read -r LINE
+#do
+#printf '\t"~*%s%s%s"\t\t%s\n' "\b" "${LINE}" "\b" "$_action1" >> "$_tmpips"
+#printf '\t"~*%s%s%s"\t\t%s\n' "\b" "${LINE}" "\b" "$_action1" >> "$_tmpips"
+#done < $_input1
+#printf '%s\n' "$_end1"  >> "$_tmpnginx1"
+#mv $_tmpnginx1 $_inputdb1
+#ed -s $_inputdb1<<\IN
+#1,/## Ping Tests Against Top Attacking Wordpress IP's ##/d
+#/## End Ping Tests Against Top Attacking Wordpress IP's ##/,$d
+#,d
+#.r /home/travis/build/mitchellkrogza/nginx-ultimate-bad-bot-blocker/travisCI/globalblacklist.template
+#/## Ping Tests Against Top Attacking Wordpress IP's ##/x
+#.t.
+#.,/## End Ping Tests Against Top Attacking Wordpress IP's ##/-d
+#,p
+#,p used to print output replaced with w below to write
+#w /home/travis/build/mitchellkrogza/nginx-ultimate-bad-bot-blocker/travisCI/globalblacklist.template
+#q
+#IN
+#rm $_inputdb1
 
 
-# ***************************************************
-# Run ping tests to check for IP's still active
-# ***************************************************
+# **************************************************
+# Generate Additional Files and Copy Them to Folders
+# **************************************************
 
-#sudo sh -x $TRAVIS_BUILD_DIR/.dev-tools/install-run-funceble.sh
+#sudo cp $_nginx $TRAVIS_BUILD_DIR/conf.d/globalblacklist.conf
+#sudo cp $_nginx $TRAVIS_BUILD_DIR/_sample_config_files/Engintron_for_cPanel_WHM_Configuration_Example/etc/nginx/conf.d/globalblacklist.conf
 
-sudo sh $TRAVIS_BUILD_DIR/.dev-tools/run-ping-tests.sh
+exit 0
 
-# ******************************************
-# Write Version Information into Readme File
-# ******************************************
-
-#sudo $TRAVIS_BUILD_DIR/.dev-tools/modify-readme-file.sh
-
-# *************************************
-# Add all the modified files and commit
-# *************************************
-
-git add -A
-git commit -am "V1.$YEAR.$MONTH.$TRAVIS_BUILD_NUMBER [ci skip]"
-
-# *************************************************************
-# Travis now moves to the before_deploy: section of .travis.yml
-# *************************************************************
 
 # MIT License
 
