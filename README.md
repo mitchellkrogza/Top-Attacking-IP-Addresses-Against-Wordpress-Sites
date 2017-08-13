@@ -7,8 +7,8 @@ Information is sourced from reports released monthly by Wordfence https://www.wo
 
 ### Version Information #
 ********************************************
-#### Version: V1.2017.08.14
-#### Total Active Attacking IP's: 57
+#### Version: V1.2017.08.15
+#### Total Active Attacking IP's: 58
 ********************************************
 ### Version Information ##
 
