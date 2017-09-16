@@ -6,11 +6,11 @@ Lists of the top attacking IP addresses trying to hack or compromise Wordpress w
 Information is sourced from reports released monthly by Wordfence https://www.wordfence.com/
 
 _______________
-[![VERSION](https://img.shields.io/badge/VERSION%20-%20V1.2017.09.23-blue.svg)](https://github.com/mitchellkrogza/Top-Attacking-IP-Addresses-Against-Wordpress-Sites/commits/master)
+[![VERSION](https://img.shields.io/badge/VERSION%20-%20V1.2017.09.24-blue.svg)](https://github.com/mitchellkrogza/Top-Attacking-IP-Addresses-Against-Wordpress-Sites/commits/master)
 #### Attacking IP Statistics: 
 ```
 # File generated with https://github.com/funilrys/funceble
-# Date of generation: Sat Sep 16 16:12:59 SAST 2017
+# Date of generation: Sat Sep 16 16:20:11 SAST 2017
 
 
 Status      Percentage   Numbers     

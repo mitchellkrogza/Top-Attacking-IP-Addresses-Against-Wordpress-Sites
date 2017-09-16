@@ -15,3 +15,14 @@ Domain                                                                          
 185.183.96.33                                                                                        INACTIVE    200        Sat Sep 16 16:13:30 SAST 2017
 200.7.105.43                                                                                         INACTIVE    200        Sat Sep 16 16:13:55 SAST 2017
 209.160.30.222                                                                                       INACTIVE    200        Sat Sep 16 16:13:59 SAST 2017
+107.150.49.58                                                                                        INACTIVE    200        Sat Sep 16 16:20:14 SAST 2017
+142.54.160.154                                                                                       INACTIVE    200        Sat Sep 16 16:20:19 SAST 2017
+142.54.164.58                                                                                        INACTIVE    200        Sat Sep 16 16:20:20 SAST 2017
+142.54.183.226                                                                                       INACTIVE    200        Sat Sep 16 16:20:21 SAST 2017
+142.54.188.34                                                                                        INACTIVE    200        Sat Sep 16 16:20:21 SAST 2017
+146.0.74.150                                                                                         INACTIVE    200        Sat Sep 16 16:20:21 SAST 2017
+173.208.149.170                                                                                      INACTIVE    200        Sat Sep 16 16:20:25 SAST 2017
+173.208.244.82                                                                                       INACTIVE    200        Sat Sep 16 16:20:27 SAST 2017
+185.183.96.33                                                                                        INACTIVE    200        Sat Sep 16 16:20:38 SAST 2017
+200.7.105.43                                                                                         INACTIVE    200        Sat Sep 16 16:21:01 SAST 2017
+209.160.30.222                                                                                       INACTIVE    200        Sat Sep 16 16:21:04 SAST 2017
