@@ -34,38 +34,37 @@
 YEAR=$(date +%Y)
 MONTH=$(date +%m)
 MY_GIT_TAG=V1.$YEAR.$MONTH.$TRAVIS_BUILD_NUMBER
-TOTAL_SITES=$(wc -l < $TRAVIS_BUILD_DIR/active-wordpress-attacking-ips.txt)
+TOTAL_SITES=$(wc -l < $TRAVIS_BUILD_DIR/.dev-tools/wordpress-attacking-ips.txt)
+ACTIVE_SITES=$(cat $TRAVIS_BUILD_DIR/.dev-tools/_funceble/output/logs/percentage/percentage.txt)
 
 # **********************************
 # Temporary database files we create
 # **********************************
 
 _inputdbA=/tmp/lastupdated.db
-_tmpnginxA=tmpnginxA
+_tmpfileA=tmpfileA
 
 # ***************************************************************
 # Start and End Strings to Search for to do inserts into template
 # ***************************************************************
 
-_startmarker="### Version Information #"
-_endmarker="### Version Information ##"
+_startmarker="_______________"
+_endmarker="____________________"
 
-# ****************************************
-# PRINT VERSION INFORMATION INTO README.md
-# ****************************************
+# *********************************************
+# PRINT VERSION INFORMATION INTO README.md File
+# *********************************************
 
-printf '%s\n%s\n%s%s\n%s%s\n%s\n%s' "$_startmarker" "********************************************" "#### Version: " "$MY_GIT_TAG" "#### Total Active Attacking IP's: " "$TOTAL_SITES" "********************************************" "$_endmarker" >> "$_tmpnginxA"
-mv $_tmpnginxA $_inputdbA
+printf '%s\n%s%s%s\n%s%s\n```\n%s\n```\n%s' "$_startmarker" "[![VERSION](https://img.shields.io/badge/VERSION%20-%20" "$MY_GIT_TAG" "-blue.svg)](https://github.com/mitchellkrogza/Top-Attacking-IP-Addresses-Against-Wordpress-Sites/commits/master)" "#### Attacking IP Statistics: " "$TOTAL_SITES" "$ACTIVE_SITES" "$_endmarker" >> "$_tmpfileA"
+mv $_tmpfileA $_inputdbA
 ed -s $_inputdbA<<\IN
-1,/### Version Information #/d
-/### Version Information ##/,$d
+1,/_______________/d
+/____________________/,$d
 ,d
 .r /home/travis/build/mitchellkrogza/Top-Attacking-IP-Addresses-Against-Wordpress-Sites/README.md
-/### Version Information #/x
+/_______________/x
 .t.
-.,/### Version Information ##/-d
-#,p
-#,p used to print output replaced with w below to write
+.,/____________________/-d
 w /home/travis/build/mitchellkrogza/Top-Attacking-IP-Addresses-Against-Wordpress-Sites/README.md
 q
 IN

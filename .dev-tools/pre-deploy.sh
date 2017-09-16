@@ -79,23 +79,29 @@ cat $TRAVIS_BUILD_DIR/2017/*.txt >> $TRAVIS_BUILD_DIR/wordpress-attacking-ips.tx
 sort -u $_output -o $_output
 
 # ***************************************************
+# Run funceble to check for dead domains
+# ***************************************************
+
+sudo sh -x $TRAVIS_BUILD_DIR/.dev-tools/run-funceble.sh
+
+# ***************************************************
 # Run ping tests to check for IP's still active
 # ***************************************************
 
-sudo sh -x $TRAVIS_BUILD_DIR/.dev-tools/run-ping-tests.sh
+#sudo sh -x $TRAVIS_BUILD_DIR/.dev-tools/run-ping-tests.sh
 
 # ******************************************
 # Write Version Information into Readme File
 # ******************************************
 
-sudo sh -x $TRAVIS_BUILD_DIR/.dev-tools/modify-readme-file.sh
+#sudo sh -x $TRAVIS_BUILD_DIR/.dev-tools/modify-readme-file.sh
 
 # *************************************
 # Add all the modified files and commit
 # *************************************
 
-git add -A
-git commit -am "V1.$YEAR.$MONTH.$TRAVIS_BUILD_NUMBER [ci skip]"
+#git add -A
+#git commit -am "V1.$YEAR.$MONTH.$TRAVIS_BUILD_NUMBER [ci skip]"
 
 # *************************************************************
 # Travis now moves to the before_deploy: section of .travis.yml

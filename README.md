@@ -5,18 +5,9 @@
 Lists of the top attacking IP addresses trying to hack or compromise Wordpress web sites.
 Information is sourced from reports released monthly by Wordfence https://www.wordfence.com/
 
-### Version Information #
-********************************************
-#### Version: V1.2017.09.19
-#### Total Active Attacking IP's: 67
-********************************************
-### Version Information ##
+_______________
 
-# Single List Output
-
-I collate this information from Wordfence's reports and then merge them into a single list of bad IP's which can be used by anyone to block these IP's at iptables or other firewall level. 
-
-Two output files are produced, one showing IP's that are collated from all the lists which are still ACTIVE on the internet, and another list showing IP's collated from all the lists which are INACTIVE / DEAD / NO LONGER RESPONDING.
+____________________
 
 ### Some other awesome free projects
 
@@ -30,12 +21,18 @@ Two output files are produced, one showing IP's that are collated from all the l
 - https://github.com/mitchellkrogza/Fail2Ban-Blacklist-JAIL-for-Repeat-Offenders-with-Perma-Extended-Banning
 - https://github.com/funilrys/funceble
 
+### Also Check Out the Ultimate Hosts Blacklist
+
+The Ultimate hosts file for protecting your computer or device against over a million bad web sites. Protect your children and family from gaining access to bad web sites and protect your devices and pc from being infected with Malware or Ransomware. 
+
+- https://github.com/mitchellkrogza/Ultimate.Hosts.Blacklist
+
 ### Also Checkout The Big List of Hacked Malware Web Sites
 
 This repository contains a list of all web sites I come across that are hacked with malware or purposefully planting malware. 
 Most site owners are unaware their sites have been hacked and are being used to plant malware.
 
-Check it out at: https://github.com/mitchellkrogza/The-Big-List-of-Hacked-Malware-Web-Sites
+- https://github.com/mitchellkrogza/The-Big-List-of-Hacked-Malware-Web-Sites
 
 ### Into Photography?
 
