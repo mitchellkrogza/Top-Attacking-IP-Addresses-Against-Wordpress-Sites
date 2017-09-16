@@ -72,21 +72,23 @@ git checkout master
 # *****************************************************
 
 _output=$TRAVIS_BUILD_DIR/wordpress-attacking-ips.txt
-cat $TRAVIS_BUILD_DIR/2016/*.txt >> $TRAVIS_BUILD_DIR/wordpress-attacking-ips.txt
-cat $TRAVIS_BUILD_DIR/2017/*.txt >> $TRAVIS_BUILD_DIR/wordpress-attacking-ips.txt
+
+cat $TRAVIS_BUILD_DIR/*/*.txt >> $TRAVIS_BUILD_DIR/wordpress-attacking-ips.txt
+#cat $TRAVIS_BUILD_DIR/2017/*.txt >> $TRAVIS_BUILD_DIR/wordpress-attacking-ips.txt
+
 sort -u $_output -o $_output
 
 # ***************************************************
 # Run ping tests to check for IP's still active
 # ***************************************************
 
-sudo bash $TRAVIS_BUILD_DIR/.dev-tools/run-ping-tests.sh
+sudo sh -x $TRAVIS_BUILD_DIR/.dev-tools/run-ping-tests.sh
 
 # ******************************************
 # Write Version Information into Readme File
 # ******************************************
 
-sudo $TRAVIS_BUILD_DIR/.dev-tools/modify-readme-file.sh
+sudo sh -x $TRAVIS_BUILD_DIR/.dev-tools/modify-readme-file.sh
 
 # *************************************
 # Add all the modified files and commit
