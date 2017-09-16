@@ -27,6 +27,8 @@ sudo chmod +x $TRAVIS_BUILD_DIR/.dev-tools/_funceble/funceble
 
 cd $TRAVIS_BUILD_DIR/.dev-tools/_funceble/
 
+sudo bash $TRAVIS_BUILD_DIR/.dev-tools/_funceble/tool -i
+
 # *************************
 # Run Funceble Install Tool
 # *************************
