@@ -16,7 +16,7 @@
 # Set our Input File
 # ******************
 
-_input=$TRAVIS_BUILD_DIR/.dev-tools/wordpress-attacking-ips.txt
+_input=$TRAVIS_BUILD_DIR/wordpress-attacking-ips.txt
 
 # *********************************
 # Make scripts executable by Travis
