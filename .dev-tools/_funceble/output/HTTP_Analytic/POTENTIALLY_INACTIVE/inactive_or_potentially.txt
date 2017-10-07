@@ -1,7 +1,0 @@
-# File generated with https://github.com/funilrys/funceble
-# Date of generation: Sat Oct  7 13:49:43 SAST 2017
-
-
-Domain                                                                                               Status      HTTP Code  Analyse Date        
----------------------------------------------------------------------------------------------------- ----------- ---------- -------------------------------
-178.137.93.239                                                                                       ACTIVE      404        Sat Oct  7 13:50:08 SAST 2017
