@@ -91,3 +91,105 @@ Domain                                                                          
 95.24.35.196                                                                                         ACTIVE      Unknown           NSLOOKUP   Unknown    Sat Sep 16 16:21:55 SAST 2017
 95.24.37.130                                                                                         ACTIVE      Unknown           NSLOOKUP   Unknown    Sat Sep 16 16:21:56 SAST 2017
 95.24.52.60                                                                                          ACTIVE      Unknown           NSLOOKUP   Unknown    Sat Sep 16 16:21:57 SAST 2017
+103.240.17.73                                                                                        ACTIVE      Unknown           HTTP CODE  200        Sat Oct  7 13:49:44 SAST 2017
+107.150.62.138                                                                                       ACTIVE      Unknown           NSLOOKUP   000        Sat Oct  7 13:49:46 SAST 2017
+142.54.164.58                                                                                        ACTIVE      Unknown           HTTP CODE  200        Sat Oct  7 13:49:54 SAST 2017
+142.54.183.226                                                                                       ACTIVE      Unknown           HTTP CODE  200        Sat Oct  7 13:49:54 SAST 2017
+142.54.188.34                                                                                        ACTIVE      Unknown           HTTP CODE  200        Sat Oct  7 13:49:54 SAST 2017
+146.0.74.150                                                                                         ACTIVE      Unknown           HTTP CODE  200        Sat Oct  7 13:49:55 SAST 2017
+162.244.35.14                                                                                        ACTIVE      Unknown           NSLOOKUP   200        Sat Oct  7 13:49:59 SAST 2017
+173.208.148.218                                                                                      ACTIVE      Unknown           HTTP CODE  200        Sat Oct  7 13:49:59 SAST 2017
+173.208.149.170                                                                                      ACTIVE      Unknown           HTTP CODE  200        Sat Oct  7 13:50:00 SAST 2017
+173.208.244.82                                                                                       ACTIVE      Unknown           HTTP CODE  200        Sat Oct  7 13:50:05 SAST 2017
+178.137.80.28                                                                                        ACTIVE      Unknown           NSLOOKUP   200        Sat Oct  7 13:50:05 SAST 2017
+178.137.82.201                                                                                       ACTIVE      Unknown           NSLOOKUP   200        Sat Oct  7 13:50:06 SAST 2017
+178.137.83.84                                                                                        ACTIVE      Unknown           NSLOOKUP   Unknown    Sat Oct  7 13:50:07 SAST 2017
+178.137.93.239                                                                                       ACTIVE      Unknown           NSLOOKUP   404        Sat Oct  7 13:50:08 SAST 2017
+185.119.81.11                                                                                        ACTIVE      Unknown           NSLOOKUP   000        Sat Oct  7 13:50:09 SAST 2017
+185.119.81.39                                                                                        ACTIVE      Unknown           NSLOOKUP   000        Sat Oct  7 13:50:10 SAST 2017
+185.119.81.63                                                                                        ACTIVE      Unknown           NSLOOKUP   000        Sat Oct  7 13:50:10 SAST 2017
+185.119.81.77                                                                                        ACTIVE      Unknown           NSLOOKUP   Unknown    Sat Oct  7 13:50:11 SAST 2017
+185.119.81.78                                                                                        ACTIVE      Unknown           NSLOOKUP   Unknown    Sat Oct  7 13:50:13 SAST 2017
+185.159.36.6                                                                                         ACTIVE      Unknown           NSLOOKUP   Unknown    Sat Oct  7 13:50:16 SAST 2017
+185.159.36.73                                                                                        ACTIVE      Unknown           NSLOOKUP   Unknown    Sat Oct  7 13:50:18 SAST 2017
+185.85.190.132                                                                                       ACTIVE      Unknown           NSLOOKUP   000        Sat Oct  7 13:50:19 SAST 2017
+185.85.191.196                                                                                       ACTIVE      Unknown           NSLOOKUP   000        Sat Oct  7 13:50:20 SAST 2017
+185.85.191.201                                                                                       ACTIVE      Unknown           NSLOOKUP   000        Sat Oct  7 13:50:20 SAST 2017
+185.85.238.244                                                                                       ACTIVE      Unknown           NSLOOKUP   000        Sat Oct  7 13:50:21 SAST 2017
+185.85.239.110                                                                                       ACTIVE      Unknown           NSLOOKUP   000        Sat Oct  7 13:50:21 SAST 2017
+185.85.239.130                                                                                       ACTIVE      Unknown           NSLOOKUP   000        Sat Oct  7 13:50:21 SAST 2017
+185.85.239.156                                                                                       ACTIVE      Unknown           NSLOOKUP   000        Sat Oct  7 13:50:22 SAST 2017
+185.85.239.157                                                                                       ACTIVE      Unknown           NSLOOKUP   000        Sat Oct  7 13:50:22 SAST 2017
+185.85.239.195                                                                                       ACTIVE      Unknown           NSLOOKUP   000        Sat Oct  7 13:50:22 SAST 2017
+185.86.13.211                                                                                        ACTIVE      Unknown           NSLOOKUP   Unknown    Sat Oct  7 13:50:24 SAST 2017
+185.86.13.212                                                                                        ACTIVE      Unknown           NSLOOKUP   Unknown    Sat Oct  7 13:50:25 SAST 2017
+185.86.13.213                                                                                        ACTIVE      Unknown           NSLOOKUP   000        Sat Oct  7 13:50:25 SAST 2017
+185.86.167.4                                                                                         ACTIVE      Unknown           NSLOOKUP   000        Sat Oct  7 13:50:26 SAST 2017
+185.86.5.199                                                                                         ACTIVE      Unknown           NSLOOKUP   000        Sat Oct  7 13:50:26 SAST 2017
+185.86.5.212                                                                                         ACTIVE      Unknown           NSLOOKUP   000        Sat Oct  7 13:50:27 SAST 2017
+185.86.5.251                                                                                         ACTIVE      Unknown           NSLOOKUP   000        Sat Oct  7 13:50:27 SAST 2017
+185.92.72.88                                                                                         ACTIVE      Unknown           NSLOOKUP   000        Sat Oct  7 13:50:27 SAST 2017
+192.187.98.42                                                                                        ACTIVE      Unknown           HTTP CODE  200        Sat Oct  7 13:50:30 SAST 2017
+192.187.98.43                                                                                        ACTIVE      Unknown           HTTP CODE  200        Sat Oct  7 13:50:30 SAST 2017
+192.187.98.44                                                                                        ACTIVE      Unknown           HTTP CODE  200        Sat Oct  7 13:50:30 SAST 2017
+194.28.115.228                                                                                       ACTIVE      Unknown           NSLOOKUP   000        Sat Oct  7 13:50:34 SAST 2017
+194.28.115.252                                                                                       ACTIVE      Unknown           NSLOOKUP   000        Sat Oct  7 13:50:34 SAST 2017
+195.154.182.111                                                                                      ACTIVE      Unknown           NSLOOKUP   Unknown    Sat Oct  7 13:50:35 SAST 2017
+195.154.183.190                                                                                      ACTIVE      Unknown           NSLOOKUP   Unknown    Sat Oct  7 13:50:37 SAST 2017
+195.154.189.62                                                                                       ACTIVE      Unknown           NSLOOKUP   000        Sat Oct  7 13:50:37 SAST 2017
+195.154.237.74                                                                                       ACTIVE      Unknown           NSLOOKUP   000        Sat Oct  7 13:50:38 SAST 2017
+195.154.252.100                                                                                      ACTIVE      Unknown           NSLOOKUP   Unknown    Sat Oct  7 13:50:39 SAST 2017
+195.154.252.171                                                                                      ACTIVE      Unknown           NSLOOKUP   000        Sat Oct  7 13:50:39 SAST 2017
+195.154.253.105                                                                                      ACTIVE      Unknown           NSLOOKUP   000        Sat Oct  7 13:50:39 SAST 2017
+208.110.66.130                                                                                       ACTIVE      Unknown           NSLOOKUP   200        Sat Oct  7 13:50:46 SAST 2017
+209.160.30.222                                                                                       ACTIVE      Unknown           HTTP CODE  200        Sat Oct  7 13:50:46 SAST 2017
+35.189.196.190                                                                                       ACTIVE      Unknown           NSLOOKUP   Unknown    Sat Oct  7 13:50:49 SAST 2017
+37.1.135.112                                                                                         ACTIVE      Unknown           NSLOOKUP   Unknown    Sat Oct  7 13:50:51 SAST 2017
+46.118.118.90                                                                                        ACTIVE      Unknown           NSLOOKUP   Unknown    Sat Oct  7 13:50:53 SAST 2017
+46.118.119.138                                                                                       ACTIVE      Unknown           NSLOOKUP   Unknown    Sat Oct  7 13:50:54 SAST 2017
+46.118.156.191                                                                                       ACTIVE      Unknown           NSLOOKUP   Unknown    Sat Oct  7 13:50:57 SAST 2017
+5.254.100.66                                                                                         ACTIVE      Unknown           NSLOOKUP   000        Sat Oct  7 13:50:57 SAST 2017
+62.210.146.49                                                                                        ACTIVE      Unknown           NSLOOKUP   Unknown    Sat Oct  7 13:51:03 SAST 2017
+62.210.181.123                                                                                       ACTIVE      Unknown           NSLOOKUP   Unknown    Sat Oct  7 13:51:04 SAST 2017
+62.210.88.4                                                                                          ACTIVE      Unknown           NSLOOKUP   200        Sat Oct  7 13:51:05 SAST 2017
+69.197.145.178                                                                                       ACTIVE      Unknown           NSLOOKUP   200        Sat Oct  7 13:51:05 SAST 2017
+74.91.17.178                                                                                         ACTIVE      Unknown           NSLOOKUP   000        Sat Oct  7 13:51:06 SAST 2017
+77.120.155.207                                                                                       ACTIVE      Unknown           NSLOOKUP   Unknown    Sat Oct  7 13:51:08 SAST 2017
+77.121.248.91                                                                                        ACTIVE      Unknown           NSLOOKUP   Unknown    Sat Oct  7 13:51:09 SAST 2017
+79.110.128.128                                                                                       ACTIVE      Unknown           NSLOOKUP   Unknown    Sat Oct  7 13:51:11 SAST 2017
+79.110.128.17                                                                                        ACTIVE      Unknown           NSLOOKUP   Unknown    Sat Oct  7 13:51:12 SAST 2017
+79.110.128.252                                                                                       ACTIVE      Unknown           NSLOOKUP   Unknown    Sat Oct  7 13:51:14 SAST 2017
+79.110.128.63                                                                                        ACTIVE      Unknown           NSLOOKUP   Unknown    Sat Oct  7 13:51:15 SAST 2017
+85.25.236.96                                                                                         ACTIVE      Unknown           NSLOOKUP   Unknown    Sat Oct  7 13:51:16 SAST 2017
+89.248.172.121                                                                                       ACTIVE      Unknown           NSLOOKUP   000        Sat Oct  7 13:51:16 SAST 2017
+91.200.12.103                                                                                        ACTIVE      Unknown           NSLOOKUP   Unknown    Sat Oct  7 13:51:18 SAST 2017
+91.200.12.113                                                                                        ACTIVE      Unknown           NSLOOKUP   Unknown    Sat Oct  7 13:51:19 SAST 2017
+91.200.12.114                                                                                        ACTIVE      Unknown           NSLOOKUP   Unknown    Sat Oct  7 13:51:20 SAST 2017
+91.200.12.15                                                                                         ACTIVE      Unknown           NSLOOKUP   200        Sat Oct  7 13:51:21 SAST 2017
+91.200.12.153                                                                                        ACTIVE      Unknown           NSLOOKUP   Unknown    Sat Oct  7 13:51:22 SAST 2017
+91.200.12.155                                                                                        ACTIVE      Unknown           NSLOOKUP   Unknown    Sat Oct  7 13:51:23 SAST 2017
+91.200.12.159                                                                                        ACTIVE      Unknown           NSLOOKUP   Unknown    Sat Oct  7 13:51:25 SAST 2017
+91.200.12.18                                                                                         ACTIVE      Unknown           NSLOOKUP   Unknown    Sat Oct  7 13:51:26 SAST 2017
+91.200.12.188                                                                                        ACTIVE      Unknown           NSLOOKUP   000        Sat Oct  7 13:51:26 SAST 2017
+91.200.12.2                                                                                          ACTIVE      Unknown           NSLOOKUP   Unknown    Sat Oct  7 13:51:27 SAST 2017
+91.200.12.21                                                                                         ACTIVE      Unknown           NSLOOKUP   Unknown    Sat Oct  7 13:51:29 SAST 2017
+91.200.12.22                                                                                         ACTIVE      Unknown           NSLOOKUP   000        Sat Oct  7 13:51:29 SAST 2017
+91.200.12.29                                                                                         ACTIVE      Unknown           NSLOOKUP   Unknown    Sat Oct  7 13:51:30 SAST 2017
+91.200.12.33                                                                                         ACTIVE      Unknown           NSLOOKUP   Unknown    Sat Oct  7 13:51:32 SAST 2017
+91.200.12.42                                                                                         ACTIVE      Unknown           NSLOOKUP   Unknown    Sat Oct  7 13:51:33 SAST 2017
+91.200.12.43                                                                                         ACTIVE      Unknown           NSLOOKUP   000        Sat Oct  7 13:51:33 SAST 2017
+91.200.12.49                                                                                         ACTIVE      Unknown           NSLOOKUP   000        Sat Oct  7 13:51:34 SAST 2017
+91.200.12.52                                                                                         ACTIVE      Unknown           NSLOOKUP   Unknown    Sat Oct  7 13:51:35 SAST 2017
+91.200.12.53                                                                                         ACTIVE      Unknown           NSLOOKUP   000        Sat Oct  7 13:51:35 SAST 2017
+91.200.12.58                                                                                         ACTIVE      Unknown           NSLOOKUP   Unknown    Sat Oct  7 13:51:36 SAST 2017
+91.200.12.61                                                                                         ACTIVE      Unknown           NSLOOKUP   Unknown    Sat Oct  7 13:51:38 SAST 2017
+91.200.12.81                                                                                         ACTIVE      Unknown           NSLOOKUP   302        Sat Oct  7 13:51:38 SAST 2017
+91.200.12.86                                                                                         ACTIVE      Unknown           NSLOOKUP   200        Sat Oct  7 13:51:39 SAST 2017
+91.200.12.91                                                                                         ACTIVE      Unknown           NSLOOKUP   000        Sat Oct  7 13:51:39 SAST 2017
+91.200.12.92                                                                                         ACTIVE      Unknown           NSLOOKUP   Unknown    Sat Oct  7 13:51:41 SAST 2017
+91.200.13.16                                                                                         ACTIVE      Unknown           NSLOOKUP   Unknown    Sat Oct  7 13:51:42 SAST 2017
+91.219.236.140                                                                                       ACTIVE      Unknown           NSLOOKUP   000        Sat Oct  7 13:51:43 SAST 2017
+92.222.74.29                                                                                         ACTIVE      Unknown           NSLOOKUP   301        Sat Oct  7 13:51:44 SAST 2017
+95.24.35.196                                                                                         ACTIVE      Unknown           NSLOOKUP   Unknown    Sat Oct  7 13:51:45 SAST 2017
+95.24.37.130                                                                                         ACTIVE      Unknown           NSLOOKUP   Unknown    Sat Oct  7 13:51:47 SAST 2017
+95.24.52.60                                                                                          ACTIVE      Unknown           NSLOOKUP   Unknown    Sat Oct  7 13:51:48 SAST 2017
