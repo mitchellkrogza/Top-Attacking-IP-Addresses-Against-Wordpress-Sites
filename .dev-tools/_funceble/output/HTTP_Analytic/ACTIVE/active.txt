@@ -1,0 +1,18 @@
+# File generated with https://github.com/funilrys/funceble
+# Date of generation: Sat Oct  7 14:08:29 SAST 2017
+
+
+Domain                                                                                               Status      HTTP Code  Analyse Date        
+---------------------------------------------------------------------------------------------------- ----------- ---------- -------------------------------
+103.240.17.73                                                                                        INACTIVE    200        Sat Oct  7 14:08:30 SAST 2017
+142.54.164.58                                                                                        INACTIVE    200        Sat Oct  7 14:08:37 SAST 2017
+142.54.183.226                                                                                       INACTIVE    200        Sat Oct  7 14:08:38 SAST 2017
+142.54.188.34                                                                                        INACTIVE    200        Sat Oct  7 14:08:38 SAST 2017
+146.0.74.150                                                                                         INACTIVE    200        Sat Oct  7 14:08:38 SAST 2017
+173.208.148.218                                                                                      INACTIVE    200        Sat Oct  7 14:08:42 SAST 2017
+173.208.149.170                                                                                      INACTIVE    200        Sat Oct  7 14:08:42 SAST 2017
+173.208.244.82                                                                                       INACTIVE    200        Sat Oct  7 14:08:46 SAST 2017
+192.187.98.42                                                                                        INACTIVE    200        Sat Oct  7 14:09:09 SAST 2017
+192.187.98.43                                                                                        INACTIVE    200        Sat Oct  7 14:09:09 SAST 2017
+192.187.98.44                                                                                        INACTIVE    200        Sat Oct  7 14:09:09 SAST 2017
+209.160.30.222                                                                                       INACTIVE    200        Sat Oct  7 14:09:24 SAST 2017
