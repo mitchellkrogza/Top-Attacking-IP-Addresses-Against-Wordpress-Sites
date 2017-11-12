@@ -1,1 +1,1 @@
-/home/travis/build/mitchellkrogza/Top-Attacking-IP-Addresses-Against-Wordpress-Sites/wordpress-attacking-ips.txt 95.24.52.60 143 102 41 0
+/home/travis/build/mitchellkrogza/Top-Attacking-IP-Addresses-Against-Wordpress-Sites/wordpress-attacking-ips.txt 95.24.52.60 148 102 46 0
